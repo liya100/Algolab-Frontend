@@ -1,0 +1,225 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  scroll-behavior: smooth;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  font-family: Arial;
+  display: flex;
+  flex-direction: column; /* 👈 make it vertical layout */
+  padding: 20px 40px;
+  gap: 12px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.profile-icon img {
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* Search bar wrapper below the header */
+.header-search {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.card-section {
+  width: 1065px;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1065px;
+  margin: 0 auto;
+  gap: 15px; /* space between arrow and cards */
+}
+
+.card-container {
+  display: flex;
+  gap: 30px;
+  width: 690px; /* 3 cards (210px) + 2 gaps (30px) */
+  overflow: hidden;
+}
+
+.card {
+  width: 210px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  font-family: Arial;
+}
+
+.card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.arrow-btn {
+  background-color: transparent;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.arrow-btn:hover {
+  border-color: #1e40af;
+  color: #1e40af;
+}
+
+.main-title,
+.section-title {
+  margin-left: 0;
+}
+
+
+.card h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+  text-align: left;
+  line-height: 1.3;
+}
+
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: #000;
+  font-family:Arial;
+}
+
+.rating img {
+  width: 14px;
+  height: 14px;
+}
+
+
+
+.main-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #222;;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #3E92CC; 
+  
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 1065px;
+  margin: 0 auto;
+}
+
+
+.card-container {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.searchbar-container {
+  width: 100%;
+  max-width: 1050px;      /* Make it wider */
+  margin: 0 auto;        /* Center horizontally */
+  padding: 24px 16px;    /* Optional: more top-bottom spacing */
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+
+.searchbar-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 12px 10px 36px; /* Left padding makes room for icon */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.2s
+}
